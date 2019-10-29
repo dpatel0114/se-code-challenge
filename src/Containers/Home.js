@@ -20,9 +20,13 @@ class Home extends Component {
 
 render(){
     return(
-        <div>
-            <img class="latestImage" src={this.state.latestComic.img} alt={this.state.latestComic.alt} title={this.state.latestComic.title}/>
+        <div style={{textAlign:"center"}}>
+            <div> Year: {this.state.latestComic.year}</div>
+            <div> Day: {this.state.latestComic.day}</div>
+
+            <img class="latestImage" src={this.state.latestComic.img} alt={this.state.latestComic.title} title={this.state.latestComic.alt}/>
         </div>
+
     )
 }
 
