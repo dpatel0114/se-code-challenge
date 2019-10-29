@@ -15,8 +15,7 @@ class Search extends Component {
             img.alt = data.title
             img.title = data.alt
             const year = document.getElementById('year')
-            year.innerText = "Year: " +  data.year + "\n"
-            year.innerText += "Day:" + data.day
+            year.innerText = `Published on : ${data.month}/${data.day }/${data.year}` 
         }) 
     } else {
         alert("Value should be in between 1 to 2219!!")

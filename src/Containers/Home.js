@@ -21,9 +21,8 @@ class Home extends Component {
 render(){
     return(
         <div style={{textAlign:"center"}}>
-            <div> Year: {this.state.latestComic.year}</div>
-            <div> Day: {this.state.latestComic.day}</div>
-
+            
+            <p>Published on : {this.state.latestComic.month}/{this.state.latestComic.day }/{this.state.latestComic.year}</p>
             <img class="latestImage" src={this.state.latestComic.img} alt={this.state.latestComic.title} title={this.state.latestComic.alt}/>
         </div>
 
